@@ -27,7 +27,7 @@ jobs:
           mkdir tmp
           mkdir bin
           # Do not use "--depth=1" due to tags
-          git clone https://github.com/XTLS/Xray-core.git
+          git clone -b fix/udp-sniffing https://github.com/XTLS/Xray-core.git
           cd Xray-core
           git checkout tags/v1.4.2
           cd ..
